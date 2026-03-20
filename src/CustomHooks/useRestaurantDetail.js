@@ -9,11 +9,15 @@ export const useRestaurantDetail = (restaurantId) => {
   }, [restaurantId]);
 
   const fetchDetail = async () => {
-    const response = await fetch(
-      RESTAUARNT_DETAIL + `&restaurantId=${restaurantId}`,
-    );
-    const data = await response.json();
-    setResult(data?.data?.cards[2]?.card?.card?.info);
+    try {
+      const response = await fetch(
+        RESTAUARNT_DETAIL + `&restaurantId=${restaurantId}`,
+      );
+      const data = await response.json();
+      setResult(data?.data?.cards[2]?.card?.card?.info);
+    } catch (error) {
+      console.error("Error fetching restaurant details:", error);
+    }
   };
 
   return result;

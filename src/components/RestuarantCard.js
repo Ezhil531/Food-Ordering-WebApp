@@ -1,6 +1,6 @@
 import { IMG_CDN_URL } from "../Utils";
 const RestuarantCard = ({ restaurant }) => {
-  console.log(IMG_CDN_URL + restaurant?.cloudinaryImageId);
+  // console.log(IMG_CDN_URL + restaurant?.cloudinaryImageId);
   return (
     <div className="w-[300px] h-[260px] bg-white rounded-lg shadow-md m-6 border border-gray-200 border-solid">
       <img
@@ -17,4 +17,3 @@ const RestuarantCard = ({ restaurant }) => {
 };
 
 export default RestuarantCard;
-
