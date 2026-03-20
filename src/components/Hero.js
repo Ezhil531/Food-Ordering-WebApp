@@ -25,7 +25,10 @@ const Hero = () => {
       </h1>
       <div className="flex flex-wrap gap-4 justify-center mt-4">
         {list?.map((restaurant) => (
-          <Link key={restaurant?.info?.id}>
+          <Link
+            key={restaurant?.info?.id}
+            to={`/restaurant/${restaurant?.info?.id}`}
+          >
             <RestuarantCard
               key={restaurant?.info?.id}
               restaurant={restaurant?.info}
