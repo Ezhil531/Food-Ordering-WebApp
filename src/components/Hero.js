@@ -1,5 +1,6 @@
 import RestuarantCard from "./RestuarantCard";
 import { useRestaurants } from "../CustomHooks/useRestaurans";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { restaurants } = useRestaurants();
@@ -7,7 +8,7 @@ const Hero = () => {
     restaurants[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
   console.log(list);
   return (
-    <div className="hero">
+    <div className="h-screen">
       {/* <div className="search-section">
         <h1 className="greetings">Hi, Ezhil</h1>
         <div className="search-bar">
@@ -24,10 +25,12 @@ const Hero = () => {
       </h1>
       <div className="flex flex-wrap gap-4 justify-center mt-4">
         {list?.map((restaurant) => (
-          <RestuarantCard
-            key={restaurant?.info?.id}
-            restaurant={restaurant?.info}
-          />
+          <Link key={restaurant?.info?.id}>
+            <RestuarantCard
+              key={restaurant?.info?.id}
+              restaurant={restaurant?.info}
+            />
+          </Link>
         ))}
       </div>
     </div>

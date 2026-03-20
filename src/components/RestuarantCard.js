@@ -18,13 +18,3 @@ const RestuarantCard = ({ restaurant }) => {
 
 export default RestuarantCard;
 
-const style = {
-  card: {
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-    // padding: "16px",
-    height: "260px",
-    width: "300px",
-    margin: "16px",
-  },
-};
