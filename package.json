@@ -1,0 +1,32 @@
+{
+  "name": "foodorderingwebapp",
+  "version": "1.0.0",
+  "description": "My first food ordering package",
+  "keywords": [
+    "food"
+  ],
+  "homepage": "https://github.com/Ezhil531/Food-Ordering-WebApp#readme",
+  "bugs": {
+    "url": "https://github.com/Ezhil531/Food-Ordering-WebApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezhil531/Food-Ordering-WebApp.git"
+  },
+  "license": "ISC",
+  "author": "Ezhilarasi Kumaresan",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.2"
+  }
+}
