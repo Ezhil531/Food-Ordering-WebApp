@@ -1,0 +1,23 @@
+import { useState, useEffect } from "react";
+import { RESTAURANT_API } from "../Utils";
+
+export const useRestaurants = () => {
+  const [restaurants, setRestaurants] = useState([]);
+
+  useEffect(() => {
+    fetchRestaurants();
+  }, []);
+
+  const fetchRestaurants = async () => {
+    try {
+      const response = await fetch(RESTAURANT_API);
+      const data = await response.json();
+      // console.log(data?.data?.cards);
+      setRestaurants(data?.data?.cards);
+    } catch (error) {
+      console.error("Error fetching restaurants:", error);
+    }
+  };
+
+  return { restaurants };
+};
