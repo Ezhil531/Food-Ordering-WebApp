@@ -11,7 +11,7 @@ import RestaurantDetail from "./src/components/RestaurantDetail";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <Outlet />
       {/* <Hero /> */}
@@ -44,9 +44,9 @@ const AppLayout = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path:"/restaurant/:restaurantId",
+        path: "/restaurant/:restaurantId",
         element: <RestaurantDetail />,
-      }
+      },
     ],
     errorElement: <Error />,
   },

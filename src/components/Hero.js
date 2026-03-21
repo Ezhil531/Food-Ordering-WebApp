@@ -25,7 +25,7 @@ const Hero = () => {
   // }
 
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <div className="flex items-center justify-center p-4 relative">
         <h1 className="absolute left-4 text-2xl font-bold">Hi, Ezhil ✌️</h1>
         <div className="flex items-center gap-4">

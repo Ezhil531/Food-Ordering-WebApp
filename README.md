@@ -1,16 +1,24 @@
-#Food Ordering Web App 
+#Food Ordering Web App
 #Parcel
+
 - Dev build
 - Local Server
-- HMR = Hot Module Replacement 
+- HMR = Hot Module Replacement
 - file watching algo - written in c++
 - caching in - 7ms , 4ms
 - Image Optimization
-- bundling 
+- bundling
 - Compress the file / minify
 - Code spliting
 - Tree Shaking - remove un-used code
+
 # Tailwind css
+
 # Redux - cart
+
 # Swiggy api
+
 # React Router Dom
+
+# Lifting State Up in React: Sharing Data Between Parent and Child Components
+ 
